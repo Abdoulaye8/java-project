@@ -1,6 +1,15 @@
 import java.util.Scanner;
+
+/**
+ * la classe {demenagement}, simuler un demenagement en fonction en fonction de :
+ * nombre de carton
+ * la capacité du camion
+ * on a deux version: fixe et dynamique(l'utilisateurs met les valeurs)
+ */
 public class Demenagement {
-    // version fixe
+    /**
+     * version fixe avec 34 cartons et une capacité 9 cartons pour le camion
+     */
     public static void versionFixe() {
         int totalCartons = 34;
         int camionCapacity = 9;
@@ -13,6 +22,10 @@ public class Demenagement {
             reste -= charge;
         }
     }
+
+    /**
+     * ici c'est la version dynamique avec l'utilisatateur.
+     */
     public static void versionDynamique() {
         Scanner sc = new Scanner(System.in);
 
@@ -29,7 +42,12 @@ public class Demenagement {
         sc.close();
     }
 
-    // Méthode utilitaire
+    /**
+     * Lit est un entier positif dont l'utilisateur a entré
+     * @param sc scanner utiliser pour lire l'entier
+     * @param message qui est affiché pour demander à saisir
+     * @return retourne un entier
+     */
     private static int lireEntierPositif(Scanner sc, String message) {
         int valeur;
         while (true) {
@@ -50,7 +68,9 @@ public class Demenagement {
     }
 
 
-    // Point entré principal
+    /**
+     * ici c'est la méthode principale qui execute les deux versions
+     */
 
     public static void main(String[] args) {
         System.out.println("=== Exercice 5 : Version statique ===");
