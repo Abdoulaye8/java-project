@@ -53,10 +53,10 @@ public class Demenagement {
     // Point entré principal
 
     public static void main(String[] args) {
-        System.out.println("=== Exo 5 : Version statique ===");
+        System.out.println("=== Exercice 5 : Version statique ===");
         versionFixe();
 
-        System.out.println("\n=== Exo 6 : Version dynamique ===");
+        System.out.println("\n=== Exercice 6 : Version dynamique ===");
         versionDynamique();
     }
 }
